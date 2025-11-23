@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Imthon</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container nav">
+            <img class="logo" src="./images/myteam.png" alt="">
+            <nav class="desktop-nav">
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a class="contact-btn" href="#">contact us</a>
+            </nav>
+            <div class="mobile-menu-btn" id="menuBtn">☰</div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a class="contact-btn" href="#">contact us</a>
+        </div>
+    </header>
+
+
+    <section id="about" class="about-section container">
+        <h1>About</h1>
+        <p>
+            We help companies build dynamic teams made up of top global talent.
+            Using our network of experienced professionals we drive innovation
+            and deliver incredible outcomes.
+        </p>
+    </section>
+
+
+    <section class="directors-section">
+        <h2>Meet the directors</h2>
+
+        <div class="directors-container">
+            <div class="director-card">
+                <img src="./images/a1.png" class="avatar" />
+                <h3>Nikita Marks</h3>
+                <p>Founder & CEO</p>
+            </div>
+
+            <div class="director-card">
+                <img src="./images/a2.png" class="avatar" />
+                <h3>Cristian Duncan</h3>
+                <p>Co-founder & COO</p>
+            </div>
+
+
+            <div class="director-card">
+                <img src="./images/a3.png" class="avatar" />
+                <h3>Cruz Hamer</h3>
+                <p>Co-founder & CTO</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clients-section container">
+        <h2>Some of our clients</h2>
+        <div class="clients">
+            <span><img class="logo1" src="./images/1.png" alt=""></span>
+            <span><img class="logo1" src="./images/2.png" alt=""></span>
+            <span><img class="logo1" src="./images/3.png" alt=""></span>
+            <span><img class="logo1" src="./images/4.png" alt=""></span>
+            <span><img class="logo2" src="./images/5.png" alt=""></span>
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="container cta-box">
+            <h2 >Ready to get started? <a href="#">contact us</a></h2>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container nav">
+             <img class="logo" src="./images/myteam.png" alt="">
+            <nav class="footer-nav">
+                <img src="./images/facebook-logo.png" alt="">
+                <img src="./images/pinterest-logo.png" alt="">
+                <img src="./images/twitter-logo.png" alt="">
+            </nav>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+
+
+        menuBtn.onclick = () => {
+            mobileNav.classList.toggle('open');
+        };
+    </script>
+</body>
+</html>
